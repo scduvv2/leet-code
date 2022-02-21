@@ -1,10 +1,11 @@
 package learn.sorting;
 
-public class SelectionSort {
+public class SelectionSort{
 
     public static void main(String[] args){
         int[] nums = {1,3,4,6,7,2,9,1,0,1};
-        System.out.print(nums);
+        PrintArray.print(nums);
+        
         int currentPosition=0;
         while(currentPosition<nums.length){
             int currentminimum=nums[currentPosition];
@@ -20,6 +21,7 @@ public class SelectionSort {
             }
             currentPosition++;
         }
-        System.out.print(nums);
+        System.out.println("\n");
+        PrintArray.print(nums);
     }
 }
